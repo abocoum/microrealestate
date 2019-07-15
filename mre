@@ -27,6 +27,7 @@ status() {
 
 build() {
     echo "Building microrealestate..."
+    echo $prod_compose_files_argument
     docker-compose $prod_compose_files_argument build
 }
 
